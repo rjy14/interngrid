@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-gap: 10px;
+    height: 65vh;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+}
+h1{
+    text-align: center;
+}
+button{
+    position: relative;
+    left: 85%;
+    margin-top: 1%;
+}
+@media only screen and (max-width: 800px) {  
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows:0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4"
+        "5"
+        "6"
+        "7"
+        "8"
+        "9";
+    }
+}
+.scrollable-table {
+    max-height: 1250px; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+
+
